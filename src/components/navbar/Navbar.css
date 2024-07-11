@@ -1,0 +1,152 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding: 10px 50px;
+}
+
+#nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+#logo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: 900;
+}
+
+#nav ul {
+	display: flex;
+	list-style: none;
+}
+
+#nav ul li a {
+	color: rgb(65, 64, 64);
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10px;
+	transition: 0.4s ease-in-out;
+	border: 1px solid transparent;
+}
+
+#nav ul li a:hover {
+	border: 1px solid black;
+	color: black;
+}
+
+#nav .navbarBtnContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+#nav .navbarBtnContainer button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: 1px solid black;
+	transition: 0.3s ease-in-out;
+}
+
+#nav .navbarBtnContainer button#sign {
+	background: none;
+}
+
+#nav .navbarBtnContainer button#sign:hover {
+	background-color: black;
+	color: aliceblue;
+}
+
+#nav .navbarBtnContainer button#login {
+	background-color: black;
+	color: aliceblue;
+}
+
+#nav .navbarBtnContainer button#login:hover {
+	background: none;
+	color: black;
+}
+
+#dropdownMenu {
+	display: none;
+	position: relative;
+}
+
+#dropdownMenu svg {
+	font-size: xx-large;
+	cursor: pointer;
+}
+
+#dropdownItems {
+	width: 150px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	top: 40px;
+	right: 0;
+	border-radius: 10px;
+	background-color: rgb(31, 30, 30);
+	transition: 0.3s ease-in-out;
+}
+
+#dropdownItems.active {
+	display: flex;
+	height: auto;
+	opacity: 1;
+}
+
+#dropdownItems li {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+#dropdownItems li:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+#dropdownItems li:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+#dropdownItems li:hover {
+	background-color: aliceblue;
+	border: 1px solid black;
+}
+
+#dropdownItems li:hover a {
+	color: black;
+}
+
+#dropdownItems li a {
+	display: flex;
+	align-self: center;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 2px;
+	border: 1px solid transparent;
+	color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+	#nav {
+		display: none;
+	}
+
+	#dropdownMenu {
+		display: flex;
+	}
+}
