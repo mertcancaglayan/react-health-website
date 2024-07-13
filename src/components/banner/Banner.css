@@ -1,0 +1,148 @@
+.bannerSection {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: start;
+	height: min-content;
+	gap: 50px;
+}
+
+/* Banner Text Area */
+
+.bannerContent {
+	display: block;
+	align-self: center;
+	width: 40%;
+	text-align: start;
+    margin-left: 3%;
+}
+
+.bannerContent h1 {
+	margin: 5px;
+	padding: 0;
+	font-size: clamp(2.5rem, 5vw, 3.75rem);
+}
+
+.bannerContent p {
+	margin: 20px 0;
+	padding: 0;
+	font-size: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+.bannerButtons {
+	display: flex;
+	margin-top: 30px;
+	gap: 10px;
+}
+
+.bannerButtons button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: 1px solid black;
+	transition: 0.3s ease-in-out;
+	font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.bannerButtons button#signBtn {
+	background: none;
+}
+
+.bannerButtons button#signBtn:hover {
+	background-color: black;
+	color: aliceblue;
+}
+
+.bannerButtons button#learnBtn {
+	background-color: black;
+	color: aliceblue;
+}
+
+.bannerButtons button#learnBtn:hover {
+	background: none;
+	color: black;
+}
+
+/* Carousel Styles */
+.bannerCarousel {
+	max-width: 50vw;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	background-color: #eeeeee;
+}
+
+.carouselContainer {
+	position: relative;
+	width: 100%;
+	max-width: 50vw;
+	height: 90%;
+}
+
+.carouselContent {
+	display: flex;
+	justify-content: start;
+	height: 100%;
+	overflow: hidden;
+}
+
+.carouselItem {
+	transition: 1s ease-in-out;
+	width: 100%;
+	height: 100%;
+}
+
+.carouselItemContent {
+	height: 100%;
+}
+
+.imageWrapper {
+	width: 50vw;
+	overflow: hidden;
+}
+
+.carouselImage {
+	width: 100%;
+	max-height: 600px;
+}
+
+.carouselText {
+	display: flex;
+	justify-content: center;
+	text-align: start;
+	margin: 10px 5% 0;
+}
+
+.carouselText h2,
+.carouselText p {
+	margin: 0;
+	padding: 2px;
+	font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.carouselControls {
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin: 20px 0;
+}
+
+.carouselButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	color: rgb(133, 130, 130);
+	padding: 5px 15px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.carouselButton:hover {
+	color: black;
+}
