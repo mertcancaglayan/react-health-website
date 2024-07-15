@@ -14,7 +14,7 @@
 	align-self: center;
 	width: 40%;
 	text-align: start;
-    margin-left: 3%;
+	margin-left: 3%;
 }
 
 .bannerContent h1 {
@@ -145,4 +145,16 @@
 
 .carouselButton:hover {
 	color: black;
+}
+
+@media screen and (max-width: 768px) {
+	.bannerContent h1 {
+		margin: 5px;
+		padding: 0;
+		font-size: clamp(1.8rem, 4vw, 3rem);
+	}
+
+	.bannerContent p {
+		font-size: clamp(0.8rem, 2vw, 1rem);
+	}
 }

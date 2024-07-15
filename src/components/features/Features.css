@@ -1,0 +1,133 @@
+.sectionPadding {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	border-top: 1px solid black;
+}
+
+.featuresContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.featuresHeader {
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.headerContent {
+	width: 100%;
+	max-width: 50rem;
+}
+
+.title {
+	margin-bottom: 1.25rem;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.description {
+	font-size: 1rem;
+}
+
+.featuresGrid {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: center;
+	gap: 3rem;
+}
+
+.featureItem {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.itemTitle,
+.itemDescription {
+	padding: 0;
+	margin: 15px 0 2px;
+}
+
+.imageContainer {
+	width: 25vw;
+}
+
+.imageContainer img {
+	width: 100%;
+}
+
+.buttonsContainer {
+	display: flex;
+	margin: 50px 0;
+	gap: 10px;
+}
+
+.buttonsContainer button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	border: 1px solid black;
+	transition: 0.3s ease-in-out;
+	font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.buttonsContainer button#exploreBtn {
+	background: none;
+}
+
+.buttonsContainer button#exploreBtn:hover {
+	background-color: black;
+	color: aliceblue;
+}
+
+.buttonsContainer button#joinBtn {
+	background-color: black;
+	color: aliceblue;
+}
+
+.buttonsContainer button#joinBtn:hover {
+	background: none;
+	color: black;
+}
+
+@media screen and (max-width: 1024px) {
+	.title {
+		font-size: 2rem;
+	}
+
+	.featureItem {
+		width: 25vw;
+	}
+
+	.imageContainer {
+		width: 25vw;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title {
+		font-size: 1.5rem;
+	}
+	.description {
+		font-size: 0.8rem;
+	}
+
+	.featuresGrid {
+		flex-direction: column;
+	}
+
+	.featureItem {
+		width: 50vw;
+	}
+
+	.imageContainer {
+		width: 50vw;
+	}
+}
