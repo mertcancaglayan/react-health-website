@@ -1,0 +1,73 @@
+.largeCard1 {
+	grid-area: 1 / 1 / 4 / 3;
+}
+.largeCard2 {
+	grid-area: 3 / 3 / 5 / 5;
+}
+
+@media (max-width: 768px) {
+	.largeCard1,
+	.largeCard2 {
+		grid-area: auto;
+	}
+}
+
+.largeCard {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgba(223, 223, 223, 0.705);
+}
+
+.largeCard .content {
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 1.5rem;
+}
+
+.largeCard .textArea {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.largeCard .cardtitle {
+	font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+	font-weight: bold;
+	margin: 0 0 0.5rem;
+	padding: 0;
+}
+
+.largeCard .description {
+	font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+	margin-bottom: 1rem;
+}
+
+.largeCard .buttonContainer {
+	margin-top: 0.5rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.largeCard .button {
+	border: none;
+	cursor: pointer;
+}
+
+.largeCard .imgContainer {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.largeCard .image {
+	width: 100%;
+	height: auto;
+}
