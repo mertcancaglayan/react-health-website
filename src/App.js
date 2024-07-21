@@ -1,5 +1,6 @@
 import "./App.css";
 import Banner from "./components/banner/Banner";
+import Cta from "./components/cta/Cta";
 import Features from "./components/features/Features";
 import HowItWorks from "./components/howitworks/HowItWorks";
 import Navbar from "./components/navbar/Navbar";
@@ -13,6 +14,7 @@ function App() {
 			<Features></Features>
 			<Testimonial></Testimonial>
 			<HowItWorks></HowItWorks>
+			<Cta></Cta>
 		</div>
 	);
 }
