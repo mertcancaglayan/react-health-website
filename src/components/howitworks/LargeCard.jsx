@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "./LargeCard.css"
+import "./LargeCard.css";
 
 function LargeCard({ data }) {
 	return (
@@ -14,8 +14,8 @@ function LargeCard({ data }) {
 								<p className="description">{item.description}</p>
 							</div>
 							<div className="buttonContainer">
-								<button>{item.buttons.first}</button>
-								<button>{item.buttons.second}</button>
+								<button className="btn btn-first">{item.buttons.first}</button>
+								<button className="btn btn-second">{item.buttons.second}</button>
 							</div>
 						</div>
 						<div className="imgContainer">

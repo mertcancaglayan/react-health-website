@@ -18,3 +18,29 @@
 		grid-gap: 20px;
 	}
 }
+
+.btn {
+	border: 1px solid black;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+.btn.btn-first {
+	background: aliceblue;
+}
+
+.btn.btn-first:hover {
+	background: black;
+	color: white;
+}
+
+.btn.btn-second {
+	background: black;
+	color: white;
+}
+
+.btn.btn-second:hover {
+	color: black;
+	background: aliceblue;
+}

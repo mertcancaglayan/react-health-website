@@ -16,7 +16,7 @@ function MediumCard({ data }) {
 								<p className="description">{item.description}</p>
 							</div>
 							<div className="buttonContainer">
-								<button>{item.buttons.first}</button>
+								<button className="btn btn-first">{item.buttons.first}</button>
 							</div>
 						</div>
 					</div>
